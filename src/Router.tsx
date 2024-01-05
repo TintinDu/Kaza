@@ -11,6 +11,7 @@ const Router: React.FC = () => (
     <div className="App">
       <BrowserRouter>
         <NavBar />
+        <div className='body'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +21,7 @@ const Router: React.FC = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        </div>
       </BrowserRouter>
     </div>
 );
