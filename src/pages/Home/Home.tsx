@@ -1,5 +1,9 @@
+import { Banner } from '../../components/Banner/Banner.tsx';
+import { Container } from '../../components/Container/Container.tsx';
+
 export const Home = () => (
     <div>
-        <h1>Home</h1>
+        <Banner/>
+        <Container/>
     </div>
 );
