@@ -1,0 +1,21 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navElement {
+  text-align: center;
+  display: block;
+  margin: 1em;
+}
+
+.navLink {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
