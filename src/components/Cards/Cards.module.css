@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  width: 340px;
+  height: 340px;
+  background-position: center;
+  background-size: cover;
+  margin: 2em;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  color: #ffff;
+  align-self: end;
+  margin: 1em;
+}

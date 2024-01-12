@@ -1,21 +1,25 @@
 .navbar {
-  position: fixed;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: #fff;
+  margin-bottom: 1em;
 }
 
 .navElement {
   text-align: center;
-  display: block;
-  margin: 1em;
+  display: flex;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 .navLink {
   display: flex;
   justify-content: space-between;
-  margin: 1em;
+}
+
+#currentPage {
+  text-decoration: underline;
 }
