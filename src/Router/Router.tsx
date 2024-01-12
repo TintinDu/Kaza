@@ -7,7 +7,6 @@ import {Home} from '../pages/Home/Home.tsx';
 import {Housing} from '../pages/Housing/Housing.tsx';
 
 const Router: React.FC = () => (
-
 	<Routes>
 		<Route path='/' element={<Home />} />
 		<Route path='/about' element={<About />} />
