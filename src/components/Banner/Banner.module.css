@@ -1,7 +1,20 @@
 .banner {
   display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/IMG.png");
+  background-position: center;
+  height: 223px;
+  border-radius: 25px;
+  background-size: cover;
+  justify-content: center;
+  opacity: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.banner img {
-  width: 100%;
+.banner h1 {
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  align-self: center;
 }

@@ -7,4 +7,3 @@ export const Home = () => (
 		<Container/>
 	</div>
 );
-
