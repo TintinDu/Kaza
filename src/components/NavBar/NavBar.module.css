@@ -19,7 +19,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-#currentPage {
-  text-decoration: underline;
-}

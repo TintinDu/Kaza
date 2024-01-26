@@ -1,0 +1,33 @@
+.collapse {
+  max-width: 90%;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.collapseHeader {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #ff6060;
+  color: #ffff;
+}
+.collapseContent {
+  display: none;
+  padding: 10px;
+}
+.collapseContent.show {
+  border-radius: 15px;
+  display: block;
+  background-color: #f6f6f6;
+}
+
+.collapseHeader > h2 {
+  margin-left: 1em;
+}
+.collapseHeader > button {
+  cursor: pointer;
+  border: none;
+  background-color: #ff6060;
+  margin: 0 1em;
+}

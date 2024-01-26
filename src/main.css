@@ -12,8 +12,9 @@
 a {
   font-weight: 500;
   color: #ff6060;
-  text-decoration: inherit;
+  text-decoration: none;
 }
+
 a:hover {
   color: #a02f2f;
 }
@@ -31,8 +32,13 @@ h1 {
 }
 
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.currentPage {
+  text-decoration: underline;
 }
