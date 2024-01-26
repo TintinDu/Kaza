@@ -1,0 +1,11 @@
+.notFoundHeader {
+  color: #ff6060;
+  font-size: 10em;
+}
+.miniHeader {
+  color: #ff6060;
+}
+.notFoundLink {
+  color: black;
+  text-decoration: underline;
+}
