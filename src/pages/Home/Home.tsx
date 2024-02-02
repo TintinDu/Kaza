@@ -7,7 +7,7 @@ export const Home = () => (
 	<div>
 		<NavBar/>
 		<Banner fileName={'/IMG.png'} isHomepage/>
-		<Container>
+		<Container isntHomePage={false}>
 			<Cards/>
 		</Container>
 	</div>

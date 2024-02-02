@@ -9,7 +9,7 @@ export const About = () => (
 	<div>
 		<NavBar/>
 		<Banner fileName={'/IMG2.png'} isHomepage={false}/>
-		<Container isAboutPage>
+		<Container isntHomePage>
 			<div className={styles.container} style={{backgroundColor: 'inherit'}}>
 				<Collapse content={[reliabilityContent]} title={reliabilityTitle}/>
 				<Collapse content={[respectContent]} title={respectTitle}/>
