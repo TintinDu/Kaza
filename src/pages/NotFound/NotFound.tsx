@@ -2,13 +2,14 @@ import {NavLink} from 'react-router-dom';
 import {NavBar} from '../../components/NavBar/NavBar.tsx';
 import styles from './NotFound.module.css';
 import {home} from '../../constants/routes.constants.ts';
+import {notFound, notFoundLink, notFoundMessage} from '../../lang/fr/notFound.ts';
 
 export const NotFound = () => (
 	<div>
 		<NavBar/>
-		<h2 className={styles.notFoundHeader}>404</h2>
-		<h3 className={styles.miniHeader}>Oups! La page que vous demandez n'existe pas.</h3>
+		<h2 className={styles.notFoundHeader}>{notFound}</h2>
+		<h3 className={styles.miniHeader}>{notFoundMessage}</h3>
 
-		<NavLink to={home}className={styles.notFoundLink}>Retourner sur la page d'accueil</NavLink>
+		<NavLink to={home}className={styles.notFoundLink}>{notFoundLink}</NavLink>
 	</div>
 );
