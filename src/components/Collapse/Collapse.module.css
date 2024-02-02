@@ -11,15 +11,17 @@
   margin: 0 auto;
   background-color: #ff6060;
   color: #ffff;
+  position: relative;
 }
 .collapseContent {
   display: none;
   padding: 10px;
 }
 .collapseContent.show {
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   display: block;
   background-color: #f6f6f6;
+  margin-top: -1em;
 }
 
 .collapseHeader > h2 {
