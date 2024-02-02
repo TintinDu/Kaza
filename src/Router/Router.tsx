@@ -10,10 +10,9 @@ const Router: React.FC = () => (
 	<Routes>
 		<Route path='/' element={<Home />} />
 		<Route path='/about' element={<About />} />
-		<Route path='/housing/:housingId' element={<Housing />}>
-			<Route path='oki' element={<Footer />} />
-		</Route>
+		<Route path='/housing/:housingId' element={<Housing />}/>
 		<Route path='*' element={<NotFound />} />
+		<Route path='/notFound' element={<NotFound />} />
 	</Routes>
 );
 

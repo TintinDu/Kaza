@@ -1,12 +1,32 @@
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
+import {data} from '../../data/data';
+import {useEffect} from 'react';
+import {Container} from '../../components/Container/Container';
+import {NavBar} from '../../components/NavBar/NavBar';
 
 export const Housing = () => {
 	const {housingId} = useParams();
-	return (
+	const housingData = data.find(({id}) => id === housingId);
+	const navigate = useNavigate();
 
-		<div>
-			<h1>Housing</h1>
-			<h2>Housing {housingId}</h2>
-		</div>
-	);
+	if (housingData) {
+		console.log(housingData);
+		return (
+
+			<div>
+				<NavBar/>
+				<Container>
+					<h1>{housingData?.title}</h1>
+					<h2>Housing</h2>
+					<img src={housingData?.cover} alt='photo appartement' />
+				</Container>
+			</div>
+		);
+	}
+
+	useEffect(() => {
+		if (!housingData) {
+			navigate('/notFound');
+		}
+	}, []);
 };
