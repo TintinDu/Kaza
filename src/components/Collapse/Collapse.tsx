@@ -31,7 +31,9 @@ export const Collapse = ({content, title}: {content: Content; title: string}) =>
 				}`}
 			>
 				{!isCollapsed
-          && content.map(item => <p key={item}>{item}</p>)}
+			&& <div className={styles.collapseContainer}>
+				{content.map(item => <p key={item}>{item}</p>)}
+			</div>}
 			</div>
 		</div>
 	);
