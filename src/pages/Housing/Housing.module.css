@@ -10,14 +10,6 @@
   width: 90%;
 }
 
-.housingPicture {
-  border-radius: 15px;
-  width: 100%;
-  height: auto;
-  max-height: 415px;
-  object-fit: cover;
-}
-
 .housingTitle {
   color: #ff6060;
 }

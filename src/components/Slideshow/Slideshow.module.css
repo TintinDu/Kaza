@@ -1,0 +1,20 @@
+.slideshowContainer {
+  width: 100%;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  max-height: 415px;
+  background-size: cover;
+  background-position: center;
+}
+
+.arrowsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+}
