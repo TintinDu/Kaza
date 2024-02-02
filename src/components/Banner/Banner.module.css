@@ -8,8 +8,8 @@
   background-size: cover;
   justify-content: center;
   opacity: 1;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 1em auto;
+  max-width: 1440px;
 }
 
 .banner h1 {

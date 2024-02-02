@@ -1,0 +1,71 @@
+.housingContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.housingContent {
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+
+.housingPicture {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  max-height: 415px;
+  object-fit: cover;
+}
+
+.housingTitle {
+  color: #ff6060;
+}
+
+.housingLocation {
+  color: #ff6060;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInformations {
+  display: flex;
+}
+
+.userName {
+  color: #ff6060;
+}
+
+.userPicture {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userRate {
+  display: flex;
+}
+
+.tagsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 15px;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+.collapseContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
