@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -29,6 +31,11 @@ body {
 
 h1 {
   font-size: 3.2em;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 0.1px;
 }
 
 #root {
