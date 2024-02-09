@@ -50,7 +50,9 @@ export const Slideshow = (props: Props) => {
 			</div>
 				}
 			</div>
-			<div className={styles.slideshowNumberContainer}><h4 className={styles.slideshowNumber}>{`${currentSlide + 1}/${props.pictures.length}`}</h4></div>
+			{ isOnlyOnePicture
+			&& <div className={styles.slideshowNumberContainer}><h4 className={styles.slideshowNumber}>{`${currentSlide + 1}/${props.pictures.length}`}</h4></div>
+			}
 		</>
 	);
 };
