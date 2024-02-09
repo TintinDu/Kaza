@@ -1,7 +1,11 @@
 import {Footer} from '../Footer/Footer';
 import {NavBar} from '../NavBar/NavBar';
 
-export const Layout = (props: any) =>
+type Props = {
+	children: JSX.Element | JSX.Element[];
+};
+
+export const Layout = (props: Props) =>
 	<>
 		<NavBar />
 		{props.children}

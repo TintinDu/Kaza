@@ -17,6 +17,7 @@
 
 @media (max-width: 720px) {
   .card {
+    height: 255px;
     margin: 1em;
   }
 }
