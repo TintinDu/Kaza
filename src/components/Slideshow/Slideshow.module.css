@@ -32,3 +32,17 @@
 .arrow {
   cursor: pointer;
 }
+
+@media (max-width: 720px) {
+  .slideshowContainer {
+    height: 255px;
+    width: 90%;
+  }
+  .arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .slideshowNumberContainer {
+    display: none;
+  }
+}

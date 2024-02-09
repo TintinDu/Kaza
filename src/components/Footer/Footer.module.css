@@ -9,3 +9,12 @@
   color: white;
   margin-top: 5em;
 }
+
+@media (max-width: 720px) {
+  .footer {
+    margin-top: 0.5em;
+  }
+  .footerText {
+    width: 134px;
+  }
+}

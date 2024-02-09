@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1em;
 }
 
 .housingContent {
@@ -26,6 +27,7 @@
 
 .userInformations {
   display: flex;
+  padding: 1em 0em 1em 1em;
 }
 
 .userName {
@@ -35,30 +37,73 @@
 .userPicture {
   object-fit: cover;
   border-radius: 50%;
+  height: 64px;
+  width: 64px;
 }
 
 .userRate {
   display: flex;
+  align-self: center;
 }
 
 .tagsContainer {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
 }
 
 .tag {
   background-color: #ff6060;
   color: white;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 200px;
   height: 25px;
   text-align: center;
-  align-items: center;
+  align-self: center;
+  margin-right: 1em;
+  font-weight: 600;
 }
 
 .collapseContainer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+@media (max-width: 720px) {
+  .housingContainer {
+    width: 90%;
+    flex-direction: column;
+  }
+  .userContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .userInformations {
+    align-items: center;
+  }
+  .userPicture {
+    width: 32px;
+    height: 32px;
+  }
+  .userContainer h4 {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0.7em;
+  }
+  .userRate svg {
+    height: 18px;
+    width: 18px;
+  }
+  .tagsContainer {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .tag {
+    height: 18px;
+    width: 84px;
+    font-size: 0.7em;
+  }
+  .collapseContainer {
+    flex-direction: column;
+    width: 100%;
+  }
 }

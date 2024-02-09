@@ -5,14 +5,14 @@ import {data} from '../../data/data';
 
 type Content = string[];
 
-export const Collapse = ({content, title}: {content: Content; title: string}) => {
+export const Collapse = ({content, title, isHousingPage}: {content: Content; title: string; isHousingPage: boolean}) => {
 	const [isCollapsed, setIsCollapsed] = useState(true);
 	const handleToggle = () => {
 		setIsCollapsed(!isCollapsed);
 	};
 
 	return (
-		<div className={styles.collapse}>
+		<div className={isHousingPage ? styles.collapseHousing : styles.collapse}>
 			<div className={styles.collapseHeader}>
 				<h2>{title}</h2>
 				<button onClick={handleToggle}>

@@ -12,4 +12,11 @@
   color: #ffff;
   align-self: end;
   margin: 1em;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .card {
+    margin: 1em;
+  }
 }
