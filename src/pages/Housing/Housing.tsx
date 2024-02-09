@@ -7,6 +7,8 @@ import {Collapse} from '../../components/Collapse/Collapse';
 import {Slideshow} from '../../components/Slideshow/Slideshow';
 import {StarRating} from '../../components/StarRating/StarRating';
 import {Tags} from '../../components/Tags/Tags';
+import {notFound} from '../../Router/Router.constants';
+import commonStyle from './../../assets/common.module.css';
 
 export const Housing = () => {
 	const {housingId} = useParams();
@@ -16,7 +18,7 @@ export const Housing = () => {
 	if (housingData) {
 		return (
 
-			<div>
+			<div className={commonStyle.wrapper}>
 				<Container isntHomePage>
 					<Slideshow cover={housingData.cover} pictures={housingData.pictures}/>
 					<div className={styles.housingContainer}>
@@ -42,8 +44,8 @@ export const Housing = () => {
 						</div>
 					</div>
 					<div className={styles.collapseContainer}>
-						<Collapse title='Description' content={[housingData.description]} isHousingPage={true}/>
-						<Collapse title='Équipements' content={housingData.equipments} isHousingPage={true}/>
+						<Collapse title='Description' content={[housingData.description]} isHousingPage/>
+						<Collapse title='Équipements' content={housingData.equipments} isHousingPage/>
 					</div>
 				</Container>
 			</div>
@@ -52,7 +54,7 @@ export const Housing = () => {
 
 	useEffect(() => {
 		if (!housingData) {
-			navigate('/notFound');
+			navigate(notFound);
 		}
 	}, []);
 };
