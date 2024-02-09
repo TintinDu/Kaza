@@ -2,11 +2,11 @@ import {useParams, useNavigate} from 'react-router-dom';
 import {data} from '../../data/data';
 import {useEffect} from 'react';
 import {Container} from '../../components/Container/Container';
-import {NavBar} from '../../components/NavBar/NavBar';
 import styles from './Housing.module.css';
 import {Collapse} from '../../components/Collapse/Collapse';
 import {Slideshow} from '../../components/Slideshow/Slideshow';
 import {StarRating} from '../../components/StarRating/StarRating';
+import {Tags} from '../../components/Tags/Tags';
 
 export const Housing = () => {
 	const {housingId} = useParams();
@@ -17,7 +17,6 @@ export const Housing = () => {
 		return (
 
 			<div>
-				<NavBar/>
 				<Container isntHomePage>
 					<Slideshow cover={housingData.cover} pictures={housingData.pictures}/>
 					<div className={styles.housingContainer}>
@@ -25,7 +24,7 @@ export const Housing = () => {
 							<h2 className={styles.housingTitle}>{housingData.title}</h2>
 							<h3 className={styles.housingLocation}>{housingData.location}</h3>
 							<div className={styles.tagsContainer}>
-								{housingData.tags.map(tag => <p key={tag} className={styles.tag}>{tag}</p>)}
+								{housingData.tags.map(tag => <Tags key={tag} tag={tag}/>)}
 							</div>
 						</div>
 						<div className={styles.userContainer}>
