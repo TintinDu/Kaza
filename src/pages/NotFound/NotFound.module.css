@@ -2,13 +2,29 @@
   color: #ff6060;
   font-size: 10em;
   margin: 0.5em;
+  font-weight: 700;
 }
 .miniHeader {
-  margin: 4em;
+  margin: 3em;
   color: #ff6060;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 .notFoundLink {
-  color: #ff6060;
   text-decoration: underline;
   margin: 1em;
+}
+
+@media (max-width: 720px) {
+  .notFoundContainer {
+    margin-bottom: 7em;
+  }
+  .notFoundHeader {
+    font-size: 5em;
+    margin: 1em;
+  }
+  .miniHeader {
+    font-size: 1em;
+    margin: 6.5em 1em;
+  }
 }

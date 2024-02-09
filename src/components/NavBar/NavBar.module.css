@@ -1,11 +1,9 @@
 .navbar {
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #fff;
-  margin-bottom: 1em;
+  margin: 0 auto 1em auto;
+  max-width: 1240px;
 }
 
 .navElement {
@@ -24,5 +22,9 @@
   .navElement {
     text-transform: uppercase;
     font-size: 0.8em;
+  }
+  .navbar {
+    margin: 0 auto;
+    width: 90%;
   }
 }

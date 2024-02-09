@@ -4,16 +4,16 @@
     url("/IMG.png");
   background-position: center;
   height: 223px;
-  border-radius: 25px;
+  border-radius: 10px;
   background-size: cover;
   justify-content: center;
   opacity: 1;
   margin: 1em auto;
-  max-width: 1440px;
+  max-width: 1240px;
 }
 
 .banner h1 {
-  font-weight: 400;
+  font-weight: 600;
   color: #ffffff;
   display: flex;
   align-self: center;

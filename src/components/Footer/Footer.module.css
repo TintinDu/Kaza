@@ -10,11 +10,16 @@
   margin-top: 5em;
 }
 
+.footerText {
+  font-size: 1.2em;
+}
+
 @media (max-width: 720px) {
   .footer {
     margin-top: 0.5em;
   }
   .footerText {
     width: 134px;
+    font-size: 1em;
   }
 }
