@@ -9,6 +9,20 @@
   background-position: center;
 }
 
+.slideshowNumberContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.slideshowNumber {
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+  color: white;
+}
+
 .arrowsContainer {
   display: flex;
   justify-content: space-between;

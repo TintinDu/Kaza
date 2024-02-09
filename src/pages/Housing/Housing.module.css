@@ -15,7 +15,8 @@
 }
 
 .housingLocation {
-  color: #ff6060;
+  color: black;
+  font-weight: 500;
 }
 
 .userContainer {

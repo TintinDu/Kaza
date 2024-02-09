@@ -20,11 +20,12 @@ export const Slideshow = (props: Props) => {
 
 	const handleSlidePicture = () => currentSlide === 0 ? props.cover : props.pictures[currentSlide];
 
-	const isOnlyOnePicture = () => props.pictures.length > 1;
+	const isOnlyOnePicture = props.pictures.length > 1;
 
 	return (
-		<div className={styles.slideshowContainer} style={{backgroundImage: `url(${handleSlidePicture()})`}}>
-			{ isOnlyOnePicture()
+		<>
+			<div className={styles.slideshowContainer} style={{backgroundImage: `url(${handleSlidePicture()})`}}>
+				{ isOnlyOnePicture
 			&& <div className={styles.arrowsContainer}>
 				<svg width='96' height='120' viewBox='0 0 96 120' fill='none' xmlns='http://www.w3.org/2000/svg' className={styles.arrow} onClick={previousSlide}>
 					<g clipPath='url(#clip0_267543_96)'>
@@ -48,7 +49,9 @@ export const Slideshow = (props: Props) => {
 					</defs>
 				</svg>
 			</div>
-			}
-		</div>
+				}
+			</div>
+			<div className={styles.slideshowNumberContainer}><h4 className={styles.slideshowNumber}>{`${currentSlide + 1}/${props.pictures.length}`}</h4></div>
+		</>
 	);
 };
