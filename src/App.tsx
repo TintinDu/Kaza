@@ -1,14 +1,15 @@
 import React from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import {Footer} from './components/Footer/Footer.tsx';
 import Router from './Router/Router.tsx';
+import {Layout} from './components/Layout/Layout.tsx';
 
 const App: React.FC = () => (
 	<div className='App'>
 		<BrowserRouter>
 			<div className='body'>
-				<Router />
-				<Footer />
+				<Layout>
+					<Router />
+				</Layout>
 			</div>
 		</BrowserRouter>
 	</div>

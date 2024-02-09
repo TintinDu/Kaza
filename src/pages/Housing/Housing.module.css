@@ -50,18 +50,6 @@
   display: flex;
 }
 
-.tag {
-  background-color: #ff6060;
-  color: white;
-  border-radius: 5px;
-  width: 200px;
-  height: 25px;
-  text-align: center;
-  align-self: center;
-  margin-right: 1em;
-  font-weight: 600;
-}
-
 .collapseContainer {
   display: flex;
   justify-content: space-evenly;
@@ -96,11 +84,6 @@
   .tagsContainer {
     width: 100%;
     justify-content: flex-start;
-  }
-  .tag {
-    height: 18px;
-    width: 84px;
-    font-size: 0.7em;
   }
   .collapseContainer {
     flex-direction: column;

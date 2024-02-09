@@ -1,11 +1,10 @@
 
 import styles from './Collapse.module.css';
-import React, {useState} from 'react';
-import {data} from '../../data/data';
+import {useState} from 'react';
 
 type Content = string[];
 
-export const Collapse = ({content, title, isHousingPage}: {content: Content; title: string; isHousingPage: boolean}) => {
+export const Collapse = ({content, title, isHousingPage}: {content: Content; title: string; isHousingPage?: boolean}) => {
 	const [isCollapsed, setIsCollapsed] = useState(true);
 	const handleToggle = () => {
 		setIsCollapsed(!isCollapsed);

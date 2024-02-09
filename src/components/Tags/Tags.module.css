@@ -1,0 +1,19 @@
+.tag {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  align-self: center;
+  margin-right: 1em;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .tag {
+    height: 18px;
+    width: 84px;
+    font-size: 0.7em;
+  }
+}
