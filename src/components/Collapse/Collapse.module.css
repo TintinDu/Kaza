@@ -31,15 +31,16 @@
   margin-top: -1em;
   flex-direction: column;
   text-align: start;
-  color: #ff6060;
+  color: black;
+  font-weight: 400;
 }
 
 .collapseContainer {
   margin-top: 1em;
 }
 
-.collapseContent.show > p {
-  padding: 0.5em;
+.collapseContainer > p {
+  padding: 0 0.5em;
   margin: 0;
 }
 
@@ -53,7 +54,7 @@
   margin: 0 1em;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .collapseContainer {
     flex-direction: column;
     width: 90%;

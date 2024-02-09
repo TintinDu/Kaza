@@ -19,7 +19,7 @@
   align-self: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .banner {
     justify-content: flex-start;
     width: 90%;
