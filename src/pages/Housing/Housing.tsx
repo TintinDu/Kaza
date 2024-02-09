@@ -8,7 +8,6 @@ import {Slideshow} from '../../components/Slideshow/Slideshow';
 import {StarRating} from '../../components/StarRating/StarRating';
 import {Tags} from '../../components/Tags/Tags';
 import {notFound} from '../../Router/Router.constants';
-import commonStyle from './../../assets/common.module.css';
 
 export const Housing = () => {
 	const {housingId} = useParams();
@@ -18,7 +17,7 @@ export const Housing = () => {
 	if (housingData) {
 		return (
 
-			<div className={commonStyle.wrapper}>
+			<div >
 				<Container isntHomePage>
 					<Slideshow cover={housingData.cover} pictures={housingData.pictures}/>
 					<div className={styles.housingContainer}>
