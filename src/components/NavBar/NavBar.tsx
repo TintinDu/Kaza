@@ -13,7 +13,7 @@ export const NavBar = () => (
 		</svg>
 		<div className={styles.navLink}>
 			<NavLink to={home} className={({isActive}) => String(isActive ? 'currentPage' : 'notCurrentPage') + ' ' + styles.navElement} >Accueil</NavLink>
-			<NavLink to={about} className={({isActive}) => String(isActive ? 'currentPage' : 'notCurrentPage') + ' ' + styles.navElement} >A Propos</NavLink>
+			<NavLink to={about} className={({isActive}) => String(isActive ? 'currentPage' : 'notCurrentPage') + ' ' + styles.navElement} >A&nbsp;Propos</NavLink>
 		</div>
 	</nav>
 );

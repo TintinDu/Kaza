@@ -19,3 +19,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 720px) {
+  .navElement {
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+}

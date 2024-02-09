@@ -13,3 +13,10 @@
 .about {
   background-color: inherit;
 }
+
+@media (max-width: 720px) {
+  .container {
+    margin: 0 auto;
+    background-color: #ffff;
+  }
+}

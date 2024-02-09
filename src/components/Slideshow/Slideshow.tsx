@@ -7,7 +7,6 @@ type Props = {
 };
 
 export const Slideshow = (props: Props) => {
-	// Ajouter numérotation !!
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const nextSlide = () => {

@@ -43,8 +43,8 @@ export const Housing = () => {
 						</div>
 					</div>
 					<div className={styles.collapseContainer}>
-						<Collapse title='Description'content={[housingData.description]}/>
-						<Collapse title='Équipements' content={housingData.equipments}/>
+						<Collapse title='Description' content={[housingData.description]} isHousingPage={true}/>
+						<Collapse title='Équipements' content={housingData.equipments} isHousingPage={true}/>
 					</div>
 				</Container>
 			</div>

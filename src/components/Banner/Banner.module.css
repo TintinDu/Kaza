@@ -18,3 +18,18 @@
   display: flex;
   align-self: center;
 }
+
+@media (max-width: 720px) {
+  .banner {
+    justify-content: flex-start;
+    width: 90%;
+    height: 111px;
+  }
+  .banner h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 2.7em 2.7em 2.7em 1em;
+    text-align: initial;
+    width: 215px;
+  }
+}

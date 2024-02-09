@@ -9,6 +9,6 @@ export const Footer = () => (
 			<path d='M91.5323 49.8419V62.4414L96.8732 59.2915V46.6921L91.5323 49.8419Z' fill='#FFFFFF'/>
 			<path d='M106.266 34.4632L84.3497 21.6784L72.1945 14.6376L60.2234 35.5749L60.4076 55.2152L82.1396 68L84.3497 66.703V48.1744L94.1106 30.9428L104.056 36.6866V55.2152L106.266 53.9182V34.4632Z' fill='#FFFFFF'/>
 		</svg>
-		<p>© 2020 Kasa. All rights reserved</p>
+		<p className={styles.footerText}>© 2020 Kasa. All rights reserved</p>
 	</div>
 );
