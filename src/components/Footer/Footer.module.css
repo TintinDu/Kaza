@@ -10,6 +10,11 @@
   margin-top: 5em;
 }
 
+.footer svg {
+  width: 122px;
+  height: 40px;
+}
+
 .footerText {
   font-size: 1.2em;
 }

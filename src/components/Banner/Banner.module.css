@@ -17,6 +17,7 @@
   color: #ffffff;
   display: flex;
   align-self: center;
+  text-shadow: 1px 1px 2px black;
 }
 
 @media (max-width: 1024px) {

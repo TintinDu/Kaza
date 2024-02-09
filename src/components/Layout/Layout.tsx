@@ -7,7 +7,9 @@ type Props = {
 
 export const Layout = (props: Props) =>
 	<>
-		<NavBar />
-		{props.children}
+		<div style={{minHeight: '80vh'}}>
+			<NavBar />
+			{props.children}
+		</div>
 		<Footer />
 	</>;
